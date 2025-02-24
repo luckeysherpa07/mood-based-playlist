@@ -1,50 +1,25 @@
-# React + TypeScript + Vite
+# Mood-Based Playlist Generator 🎶
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+A web app that generates Spotify playlists based on the user's mood! Choose a mood like **Happy**, **Chill**, **Energetic**, or **Sad**, and the app fetches relevant playlists from Spotify to match your current vibe. It helps you find the perfect playlist without the hassle of searching!
 
-Currently, two official plugins are available:
+## Live Demo
+Here is the live version of the app:
+[https://your-project.vercel.app](https://mood-based-playlist.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Mood-based playlist generation**: Select from predefined moods to get curated playlists.
+- **Spotify API integration**: Fetches playlists dynamically based on the mood.
+- **Responsive design**: Works seamlessly across both mobile and desktop.
+- **User-friendly interface**: Simple, clean, and easy to use.
+- **Interactive elements**: Click to open playlists directly in Spotify.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Tech Stack
+- **Frontend**: 
+  - React
+  - TypeScript
+  - Tailwind CSS
+- **Backend/Integration**: 
+  - Spotify API
+- **Deployment**: 
+  - Vercel
